@@ -1,0 +1,121 @@
+"democracy_type","model_number","effect_name","control_set","control_variable","estimate","std_error","p_value","nobs","signif_0_05","signif_0_10"
+"BMR","M1","DC/PF (Learning (All Years))","","all_crises_before_5_year",1.26933879034475,0.295098345539043,4.4221397741636e-05,208,TRUE,TRUE
+"BMR","M1","Learning (All Years)","","all_crises_before_5_year",-56.150385362323,25.648407347813,0.0312572874666417,208,TRUE,TRUE
+"BMR","M3","DC/PF (Learning (All Years))","","all_crises_before_5_year",1.30317348415331,0.290570738313084,1.2196904464739e-05,211,TRUE,TRUE
+"BMR","M3","Learning (All Years)","","all_crises_before_5_year",-54.0919944544331,25.2202053371409,0.0331579235018074,211,TRUE,TRUE
+"BMR","M2","DC/PF (Learning (All Years))","+debt+partisan_cons+factor(period_dummies72)","all_crises_before_5_year",1.77031292306495,0.703069968521682,0.0180384481845416,77,TRUE,TRUE
+"BMR","M2","Learning (All Years)","+debt+partisan_cons+factor(period_dummies72)","all_crises_before_5_year",-26.6119261655848,32.8714130001657,0.425261127785461,77,FALSE,FALSE
+"BMR","M4","DC/PF (Learning (All Years))","+debt+partisan_cons+factor(period_dummies72)","all_crises_before_5_year",1.24603499671923,0.313813253670017,0.000100946836403363,211,TRUE,TRUE
+"BMR","M4","Learning (All Years)","+debt+partisan_cons+factor(period_dummies72)","all_crises_before_5_year",-25.7363782712394,35.3325256789118,0.467245402723568,211,FALSE,FALSE
+"BMR","M1","DC/PF (Learning (10 Year))","","crises_last_10_years_5_year",1.36273388416607,0.279827374723244,4.95529097312752e-06,195,TRUE,TRUE
+"BMR","M1","Learning (10 Year)","","crises_last_10_years_5_year",-10.6809802161143,8.26445600830427,0.199640897277092,195,FALSE,FALSE
+"BMR","M3","DC/PF (Learning (10 Year))","","crises_last_10_years_5_year",1.39165113042681,0.276558202539661,1.12065941181788e-06,198,TRUE,TRUE
+"BMR","M3","Learning (10 Year)","","crises_last_10_years_5_year",-10.0110925654742,8.13925190150691,0.220226257871342,198,FALSE,FALSE
+"BMR","M2","DC/PF (Learning (10 Year))","+debt+partisan_cons+factor(period_dummies72)","crises_last_10_years_5_year",1.88765250993472,0.759271018178401,0.0193969456656436,76,TRUE,TRUE
+"BMR","M2","Learning (10 Year)","+debt+partisan_cons+factor(period_dummies72)","crises_last_10_years_5_year",18.9974697949847,10.9800823997791,0.0950157580308139,76,FALSE,TRUE
+"BMR","M4","DC/PF (Learning (10 Year))","+debt+partisan_cons+factor(period_dummies72)","crises_last_10_years_5_year",1.26797911365768,0.321779552714947,0.000115809472473829,198,TRUE,TRUE
+"BMR","M4","Learning (10 Year)","+debt+partisan_cons+factor(period_dummies72)","crises_last_10_years_5_year",-1.84012329430404,9.34961013721133,0.844192781042042,198,FALSE,FALSE
+"BMR","M1","DC/PF (Learning (5 Year))","","crises_last_5_years_5_year",1.43012042011134,0.279585425799085,1.94834035255546e-06,164,TRUE,TRUE
+"BMR","M1","Learning (5 Year)","","crises_last_5_years_5_year",-3.92597257374845,8.98966180271229,0.663434378080949,164,FALSE,FALSE
+"BMR","M3","DC/PF (Learning (5 Year))","","crises_last_5_years_5_year",1.45914770783011,0.279357043604165,5.43941346259741e-07,167,TRUE,TRUE
+"BMR","M3","Learning (5 Year)","","crises_last_5_years_5_year",-3.15966862497145,8.81064461370689,0.72035539999067,167,FALSE,FALSE
+"BMR","M2","DC/PF (Learning (5 Year))","+debt+partisan_cons+factor(period_dummies72)","crises_last_5_years_5_year",1.63383682059368,0.725919080540171,0.032751321867448,65,TRUE,TRUE
+"BMR","M2","Learning (5 Year)","+debt+partisan_cons+factor(period_dummies72)","crises_last_5_years_5_year",24.493363014216,12.3034734431544,0.0567162270486574,65,FALSE,TRUE
+"BMR","M4","DC/PF (Learning (5 Year))","+debt+partisan_cons+factor(period_dummies72)","crises_last_5_years_5_year",1.24918532109173,0.341224839788124,0.000347174882715039,167,TRUE,TRUE
+"BMR","M4","Learning (5 Year)","+debt+partisan_cons+factor(period_dummies72)","crises_last_5_years_5_year",3.3175345864759,9.40958685338188,0.724898491697932,167,FALSE,FALSE
+"BMR","M1","DC/PF (Region Peer)","","peer_average_regional",1.39096732069099,0.419475994893347,0.00141716137783336,129,TRUE,TRUE
+"BMR","M1","Region Peer","","peer_average_regional",0.284191549292351,0.0970089595106903,0.00451091883364426,129,TRUE,TRUE
+"BMR","M3","DC/PF (Region Peer)","","peer_average_regional",1.41733228200067,0.419358919624388,0.000972458864611929,131,TRUE,TRUE
+"BMR","M3","Region Peer","","peer_average_regional",0.27939446580362,0.0955353257025742,0.00410838885709281,131,TRUE,TRUE
+"BMR","M2","DC/PF (Region Peer)","+debt+partisan_cons+factor(period_dummies72)","peer_average_regional",1.01072639781943,0.693983885749688,0.158237830002233,47,FALSE,FALSE
+"BMR","M2","Region Peer","+debt+partisan_cons+factor(period_dummies72)","peer_average_regional",0.0640017047389112,0.178089805649019,0.722454453685479,47,FALSE,FALSE
+"BMR","M4","DC/PF (Region Peer)","+debt+partisan_cons+factor(period_dummies72)","peer_average_regional",1.37288459874256,0.463678380025598,0.00371904934108268,131,TRUE,TRUE
+"BMR","M4","Region Peer","+debt+partisan_cons+factor(period_dummies72)","peer_average_regional",0.244024697269729,0.1003264810688,0.01652670437761,131,TRUE,TRUE
+"BMR","M1","DC/PF (Income Peer)","","peer_average_cat3",1.36230266568893,0.355243647192013,0.000249336352126647,148,TRUE,TRUE
+"BMR","M1","Income Peer","","peer_average_cat3",0.303221917874569,0.115633608595662,0.0104539992095686,148,TRUE,TRUE
+"BMR","M3","DC/PF (Income Peer)","","peer_average_cat3",1.36677648195243,0.354735126803663,0.000176576096860503,149,TRUE,TRUE
+"BMR","M3","Income Peer","","peer_average_cat3",0.303013889469239,0.115529525088637,0.00967899404739894,149,TRUE,TRUE
+"BMR","M2","DC/PF (Income Peer)","+debt+partisan_cons+factor(period_dummies72)","peer_average_cat3",NA,NA,NA,56,NA,NA
+"BMR","M2","Income Peer","+debt+partisan_cons+factor(period_dummies72)","peer_average_cat3",0.357504993837432,0.254986827595386,0.173194497864241,56,FALSE,FALSE
+"BMR","M4","DC/PF (Income Peer)","+debt+partisan_cons+factor(period_dummies72)","peer_average_cat3",1.30779649907577,0.381749593329716,0.000814469790027619,149,TRUE,TRUE
+"BMR","M4","Income Peer","+debt+partisan_cons+factor(period_dummies72)","peer_average_cat3",0.231825308269885,0.124030775427853,0.0637960892199405,149,FALSE,TRUE
+"V-Dem","M1","DC/PF (Learning (All Years))","","all_crises_before_5_year",1.42243156371428,0.289051172565541,3.52148226064454e-06,254,TRUE,TRUE
+"V-Dem","M1","Learning (All Years)","","all_crises_before_5_year",-41.9988195408251,19.9187169210055,0.0375635338806405,254,TRUE,TRUE
+"V-Dem","M3","DC/PF (Learning (All Years))","","all_crises_before_5_year",1.47805786675793,0.2849902979161,4.38656046109316e-07,262,TRUE,TRUE
+"V-Dem","M3","Learning (All Years)","","all_crises_before_5_year",-37.6678480247131,19.8841360813116,0.059312558518527,262,FALSE,TRUE
+"V-Dem","M2","DC/PF (Learning (All Years))","+debt+partisan_cons+factor(period_dummies72)","all_crises_before_5_year",2.61847892564593,0.74322010958107,0.00123934434043296,107,TRUE,TRUE
+"V-Dem","M2","Learning (All Years)","+debt+partisan_cons+factor(period_dummies72)","all_crises_before_5_year",17.7666198507119,44.8998736291823,0.694802724337575,107,FALSE,FALSE
+"V-Dem","M4","DC/PF (Learning (All Years))","+debt+partisan_cons+factor(period_dummies72)","all_crises_before_5_year",1.42882933896652,0.29061261321994,1.61647901713216e-06,262,TRUE,TRUE
+"V-Dem","M4","Learning (All Years)","+debt+partisan_cons+factor(period_dummies72)","all_crises_before_5_year",-12.5632122715236,30.1627117902774,0.677398497329752,262,FALSE,FALSE
+"V-Dem","M1","DC/PF (Learning (10 Year))","","crises_last_10_years_5_year",1.49160903615435,0.283203225701983,8.35138057597666e-07,236,TRUE,TRUE
+"V-Dem","M1","Learning (10 Year)","","crises_last_10_years_5_year",-7.8826560732667,7.41832747810999,0.290605287555855,236,FALSE,FALSE
+"V-Dem","M3","DC/PF (Learning (10 Year))","","crises_last_10_years_5_year",1.5405485740751,0.279080830087228,8.94239752488266e-08,243,TRUE,TRUE
+"V-Dem","M3","Learning (10 Year)","","crises_last_10_years_5_year",-7.18907243434451,7.42151330724274,0.333700635270282,243,FALSE,FALSE
+"V-Dem","M2","DC/PF (Learning (10 Year))","+debt+partisan_cons+factor(period_dummies72)","crises_last_10_years_5_year",2.67536129639501,0.718792817555345,0.000712696263705894,105,TRUE,TRUE
+"V-Dem","M2","Learning (10 Year)","+debt+partisan_cons+factor(period_dummies72)","crises_last_10_years_5_year",7.73770215051984,10.0218282508693,0.445397921997131,105,FALSE,FALSE
+"V-Dem","M4","DC/PF (Learning (10 Year))","+debt+partisan_cons+factor(period_dummies72)","crises_last_10_years_5_year",1.43821693032414,0.296827949460156,2.3514261534407e-06,243,TRUE,TRUE
+"V-Dem","M4","Learning (10 Year)","+debt+partisan_cons+factor(period_dummies72)","crises_last_10_years_5_year",-2.79101441027412,8.99892838339074,0.75673112924484,243,FALSE,FALSE
+"V-Dem","M1","DC/PF (Learning (5 Year))","","crises_last_5_years_5_year",1.60927518380297,0.287461361912369,2.13459707182106e-07,193,TRUE,TRUE
+"V-Dem","M1","Learning (5 Year)","","crises_last_5_years_5_year",-2.23107046595336,7.14873128141306,0.755660917551366,193,FALSE,FALSE
+"V-Dem","M3","DC/PF (Learning (5 Year))","","crises_last_5_years_5_year",1.64788288404382,0.289502046112546,4.69525896260304e-08,198,TRUE,TRUE
+"V-Dem","M3","Learning (5 Year)","","crises_last_5_years_5_year",-1.53446876159757,7.0801298881631,0.828652138332211,198,FALSE,FALSE
+"V-Dem","M2","DC/PF (Learning (5 Year))","+debt+partisan_cons+factor(period_dummies72)","crises_last_5_years_5_year",2.61357870241608,0.708345194056139,0.000780288019495094,86,TRUE,TRUE
+"V-Dem","M2","Learning (5 Year)","+debt+partisan_cons+factor(period_dummies72)","crises_last_5_years_5_year",6.22113249197068,8.90929936591527,0.48975449120487,86,FALSE,FALSE
+"V-Dem","M4","DC/PF (Learning (5 Year))","+debt+partisan_cons+factor(period_dummies72)","crises_last_5_years_5_year",1.49884119359021,0.311931153214671,3.22993182900091e-06,198,TRUE,TRUE
+"V-Dem","M4","Learning (5 Year)","+debt+partisan_cons+factor(period_dummies72)","crises_last_5_years_5_year",0.720207595919927,7.29006933479039,0.921410494660394,198,FALSE,FALSE
+"V-Dem","M1","DC/PF (Region Peer)","","peer_average_regional",1.38712939257491,0.4111765028898,0.00112446083488979,153,TRUE,TRUE
+"V-Dem","M1","Region Peer","","peer_average_regional",0.158956725890276,0.0891085862558322,0.0780587388648226,153,FALSE,TRUE
+"V-Dem","M3","DC/PF (Region Peer)","","peer_average_regional",1.41040970450951,0.40951422355691,0.000744223014336269,157,TRUE,TRUE
+"V-Dem","M3","Region Peer","","peer_average_regional",0.155020750693755,0.0881209147409541,0.0805989979327012,157,FALSE,TRUE
+"V-Dem","M2","DC/PF (Region Peer)","+debt+partisan_cons+factor(period_dummies72)","peer_average_regional",1.65872859400201,0.396421903336578,0.000218343637152937,64,TRUE,TRUE
+"V-Dem","M2","Region Peer","+debt+partisan_cons+factor(period_dummies72)","peer_average_regional",-0.0705606916851033,0.117701874991117,0.553205144583364,64,FALSE,FALSE
+"V-Dem","M4","DC/PF (Region Peer)","+debt+partisan_cons+factor(period_dummies72)","peer_average_regional",1.42351301310571,0.439664821003437,0.00149926818035273,157,TRUE,TRUE
+"V-Dem","M4","Region Peer","+debt+partisan_cons+factor(period_dummies72)","peer_average_regional",0.109150436433415,0.0872510101651745,0.21298824031442,157,FALSE,FALSE
+"V-Dem","M1","DC/PF (Income Peer)","","peer_average_cat3",1.45627251034317,0.341169403445077,4.86123738583403e-05,186,TRUE,TRUE
+"V-Dem","M1","Income Peer","","peer_average_cat3",0.328559399283319,0.105937863200084,0.00257207590248514,186,TRUE,TRUE
+"V-Dem","M3","DC/PF (Income Peer)","","peer_average_cat3",1.48520472850084,0.337004884131321,1.78748978540186e-05,190,TRUE,TRUE
+"V-Dem","M3","Income Peer","","peer_average_cat3",0.319515867165015,0.105214695215781,0.00274220169129752,190,TRUE,TRUE
+"V-Dem","M2","DC/PF (Income Peer)","+debt+partisan_cons+factor(period_dummies72)","peer_average_cat3",4.04869156372995,0.615752692595512,2.41539968988824e-07,81,TRUE,TRUE
+"V-Dem","M2","Income Peer","+debt+partisan_cons+factor(period_dummies72)","peer_average_cat3",0.190507948158752,0.185481697430209,0.312322147878504,81,FALSE,FALSE
+"V-Dem","M4","DC/PF (Income Peer)","+debt+partisan_cons+factor(period_dummies72)","peer_average_cat3",1.44999917960514,0.354096442702517,6.44596278284725e-05,190,TRUE,TRUE
+"V-Dem","M4","Income Peer","+debt+partisan_cons+factor(period_dummies72)","peer_average_cat3",0.265752771588126,0.112988386774919,0.0197787356472696,190,TRUE,TRUE
+"POLITY","M1","DC/PF (Learning (All Years))","","all_crises_before_5_year",1.27565326592946,0.282817954122542,1.74891547977617e-05,248,TRUE,TRUE
+"POLITY","M1","Learning (All Years)","","all_crises_before_5_year",-40.0193607130034,20.5407632960445,0.0541555198154161,248,FALSE,TRUE
+"POLITY","M3","DC/PF (Learning (All Years))","","all_crises_before_5_year",1.2883771078072,0.281115787239747,7.35781740536999e-06,249,TRUE,TRUE
+"POLITY","M3","Learning (All Years)","","all_crises_before_5_year",-39.624291254245,20.5896205021252,0.0554718733719012,249,FALSE,TRUE
+"POLITY","M2","DC/PF (Learning (All Years))","+debt+partisan_cons+factor(period_dummies72)","all_crises_before_5_year",2.37761424236108,0.668565548774465,0.00113099723916724,100,TRUE,TRUE
+"POLITY","M2","Learning (All Years)","+debt+partisan_cons+factor(period_dummies72)","all_crises_before_5_year",1.5347730117945,41.6930839815855,0.970850819079472,100,FALSE,FALSE
+"POLITY","M4","DC/PF (Learning (All Years))","+debt+partisan_cons+factor(period_dummies72)","all_crises_before_5_year",1.29909692294088,0.301911582955678,2.49264137023541e-05,249,TRUE,TRUE
+"POLITY","M4","Learning (All Years)","+debt+partisan_cons+factor(period_dummies72)","all_crises_before_5_year",-22.2095640759887,31.899786962271,0.486985767064284,249,FALSE,FALSE
+"POLITY","M1","DC/PF (Learning (10 Year))","","crises_last_10_years_5_year",1.34812838199617,0.274750865470609,3.60015913851741e-06,231,TRUE,TRUE
+"POLITY","M1","Learning (10 Year)","","crises_last_10_years_5_year",-6.43682536022486,7.49583975564087,0.392548863937681,231,FALSE,FALSE
+"POLITY","M3","DC/PF (Learning (10 Year))","","crises_last_10_years_5_year",1.36388480508057,0.272807275289434,1.15936889501617e-06,232,TRUE,TRUE
+"POLITY","M3","Learning (10 Year)","","crises_last_10_years_5_year",-6.03779520988896,7.50579090788044,0.422008280507933,232,FALSE,FALSE
+"POLITY","M2","DC/PF (Learning (10 Year))","+debt+partisan_cons+factor(period_dummies72)","crises_last_10_years_5_year",2.58239876763751,0.674140516323293,0.000542664934010867,97,TRUE,TRUE
+"POLITY","M2","Learning (10 Year)","+debt+partisan_cons+factor(period_dummies72)","crises_last_10_years_5_year",19.6055430324587,9.41174259562744,0.0450676862818943,97,TRUE,TRUE
+"POLITY","M4","DC/PF (Learning (10 Year))","+debt+partisan_cons+factor(period_dummies72)","crises_last_10_years_5_year",1.32795672930231,0.310327185950334,2.82716518254649e-05,232,TRUE,TRUE
+"POLITY","M4","Learning (10 Year)","+debt+partisan_cons+factor(period_dummies72)","crises_last_10_years_5_year",-3.24812534261394,9.90887675925825,0.743380682852328,232,FALSE,FALSE
+"POLITY","M1","DC/PF (Learning (5 Year))","","crises_last_5_years_5_year",1.48110579686433,0.282029324173654,8.91028173097105e-07,190,TRUE,TRUE
+"POLITY","M1","Learning (5 Year)","","crises_last_5_years_5_year",0.100044121281008,7.73723293568275,0.989710022111182,190,FALSE,FALSE
+"POLITY","M3","DC/PF (Learning (5 Year))","","crises_last_5_years_5_year",1.49436418262113,0.281193864798403,3.08834900469462e-07,191,TRUE,TRUE
+"POLITY","M3","Learning (5 Year)","","crises_last_5_years_5_year",0.692269579195284,7.70525622128328,0.928509571439083,191,FALSE,FALSE
+"POLITY","M2","DC/PF (Learning (5 Year))","+debt+partisan_cons+factor(period_dummies72)","crises_last_5_years_5_year",2.49330422597114,0.644972318146165,0.000491703031505071,79,TRUE,TRUE
+"POLITY","M2","Learning (5 Year)","+debt+partisan_cons+factor(period_dummies72)","crises_last_5_years_5_year",19.6402961191956,8.66776891982176,0.0301425831616654,79,TRUE,TRUE
+"POLITY","M4","DC/PF (Learning (5 Year))","+debt+partisan_cons+factor(period_dummies72)","crises_last_5_years_5_year",1.41275344399369,0.323131117931294,2.11050752932162e-05,191,TRUE,TRUE
+"POLITY","M4","Learning (5 Year)","+debt+partisan_cons+factor(period_dummies72)","crises_last_5_years_5_year",1.02788905940966,8.22616909482339,0.900702680961726,191,FALSE,FALSE
+"POLITY","M1","DC/PF (Region Peer)","","peer_average_regional",1.33989793633717,0.413947522757928,0.00171053455369131,158,TRUE,TRUE
+"POLITY","M1","Region Peer","","peer_average_regional",0.238500020294698,0.0923708360818468,0.0114960834634727,158,TRUE,TRUE
+"POLITY","M3","DC/PF (Region Peer)","","peer_average_regional",1.35414119148955,0.412948955130561,0.0012923164152504,159,TRUE,TRUE
+"POLITY","M3","Region Peer","","peer_average_regional",0.240889262574261,0.0921902316268029,0.00988365555323971,159,TRUE,TRUE
+"POLITY","M2","DC/PF (Region Peer)","+debt+partisan_cons+factor(period_dummies72)","peer_average_regional",1.73730664703304,0.454155692195147,0.000615630405546767,65,TRUE,TRUE
+"POLITY","M2","Region Peer","+debt+partisan_cons+factor(period_dummies72)","peer_average_regional",0.0789566359190437,0.146127156698392,0.592959767070864,65,FALSE,FALSE
+"POLITY","M4","DC/PF (Region Peer)","+debt+partisan_cons+factor(period_dummies72)","peer_average_regional",1.42143804352508,0.442484320881565,0.00162590737542622,159,TRUE,TRUE
+"POLITY","M4","Region Peer","+debt+partisan_cons+factor(period_dummies72)","peer_average_regional",0.192467907833772,0.0919767602959393,0.0381586854538477,159,TRUE,TRUE
+"POLITY","M1","DC/PF (Income Peer)","","peer_average_cat3",1.32730753112546,0.360963023703352,0.000392667152589816,181,TRUE,TRUE
+"POLITY","M1","Income Peer","","peer_average_cat3",0.374175180551172,0.108959061777609,0.000886183615752911,181,TRUE,TRUE
+"POLITY","M3","DC/PF (Income Peer)","","peer_average_cat3",1.32730753112546,0.360963023703352,0.000314557437587097,181,TRUE,TRUE
+"POLITY","M3","Income Peer","","peer_average_cat3",0.374175180551172,0.108959061777609,0.000744096447605972,181,TRUE,TRUE
+"POLITY","M2","DC/PF (Income Peer)","+debt+partisan_cons+factor(period_dummies72)","peer_average_cat3",NA,NA,NA,74,NA,NA
+"POLITY","M2","Income Peer","+debt+partisan_cons+factor(period_dummies72)","peer_average_cat3",0.374078670331766,0.163472463006265,0.0293353632219645,74,TRUE,TRUE
+"POLITY","M4","DC/PF (Income Peer)","+debt+partisan_cons+factor(period_dummies72)","peer_average_cat3",1.38351322609263,0.391648257959711,0.000534180233481592,181,TRUE,TRUE
+"POLITY","M4","Income Peer","+debt+partisan_cons+factor(period_dummies72)","peer_average_cat3",0.323565772235175,0.118079742862452,0.00681469619654456,181,TRUE,TRUE

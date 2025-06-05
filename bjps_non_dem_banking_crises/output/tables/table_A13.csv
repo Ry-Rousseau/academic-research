@@ -1,0 +1,9 @@
+"democracy_type","model_number","effect_name","control_set","control_variable","estimate","std_error","p_value","nobs","signif_0_05","signif_0_10"
+"POLITY","M1","DC_Mand_Revise2","","None",1.40502548970632,0.266150457161874,7.46256360015142e-07,253,TRUE,TRUE
+"POLITY","M3","DC_Mand_Revise2","","None",1.41581940570058,0.264512294033387,1.98009186939161e-07,254,TRUE,TRUE
+"POLITY","M2","DC_Mand_Revise2","+debt+partisan_cons+factor(period_dummies72)","None",2.37679209318293,0.6601355130163,0.00100070809679196,100,TRUE,TRUE
+"POLITY","M4","DC_Mand_Revise2","+debt+partisan_cons+factor(period_dummies72)","None",1.31868798741491,0.302750336817409,1.97700036399955e-05,254,TRUE,TRUE
+"V-Dem","M1","DC_Mand_Revise2","","None",1.56416835837592,0.276190241056636,1.51413347804755e-07,259,TRUE,TRUE
+"V-Dem","M3","DC_Mand_Revise2","","None",1.60122461298732,0.27218689672741,1.23756056124771e-08,267,TRUE,TRUE
+"V-Dem","M2","DC_Mand_Revise2","+debt+partisan_cons+factor(period_dummies72)","None",2.60182575966562,0.727990956076955,0.00107696351921406,107,TRUE,TRUE
+"V-Dem","M4","DC_Mand_Revise2","+debt+partisan_cons+factor(period_dummies72)","None",1.44164522604156,0.288870220646942,1.12658761103136e-06,267,TRUE,TRUE

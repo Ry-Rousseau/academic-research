@@ -1,0 +1,14 @@
+Table 2: Effect on Bailout Policy Index
+
+                    M1        M2        M3        M4
+------------------------------------------------------
+Mandatory DC/PF  1.462***    1.777***    1.483***    1.271***
+                 (0.264)  (0.704)  (0.261)  (0.312)
+
+Num.Obs.         213      77      216      216
+
+------------------------------------------------------
+Notes: * p < 0.05, ** p < 0.01, *** p < 0.001.
+All models include controls for degree of democracy, exchange rate regime, and GDP per capita.
+Full controls are public debt / GDP and partisanship.
+
