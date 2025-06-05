@@ -2,7 +2,7 @@
 Replication files and code for research papers in political economy - reproducible analysis, modeling, and visualization, completed as Research Officer at the LSE Department of International Relations 2024-2025.
 
 | Paper Title | Journal | Status | Folder | Key Methods |
-|--------------------------------|--------------------------|---------|---------|-------------|
+|--------------------------------|--------------------------|---------|------|-----------------|
 | Distributional preferences in a global pandemic: Voter attitudes towards COVID-19 economy policy interventions | European Journal of Political Research | Under Review | `/ejpr_econ_preferences/` | Conjoint analysis, survey inference  |
 |  Autocratic Bank Bailouts: Financialized Pensions, Mass Wealth Accumulation, and Regime Survival | British Journal of Political Science | Forthcoming | `/bjps_non_dem_banking_crises/` | multiple imputation, panel regression |
 
