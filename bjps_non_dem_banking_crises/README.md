@@ -3,17 +3,17 @@
 ## Key Summary
 
 * **Question** When systemic banking crises strike, do autocracies that have *financialized* key supporters’ wealth via mandatory DC/PF pensions respond with more extensive bailouts, and does this insulate them from mass unrest?  
-* **Finding** Yes. Exposure to DC/PF pensions raises a country’s *Bailout Policy Index* (BPI) by ~ +1.2 standard deviations **and** this presists through extensive checks against confounder variables.  
+* **Finding** Yes. Exposure to DC/PF pensions raises a country’s *Bailout Policy Index* (BPI) by ~ +1.2 standard deviations **and** this presists through extensive checks against possible confounder variables.  
 * **Mechanism** Bailouts protect pension-linked wealth, sustaining the “authoritarian bargain’’ and regime survival.
 
 ### Data Science Pipeline
 
-* Extensive feature engineering
+* **Extensive feature engineering**
     * PCA to generate novel measure of bank bailouts during economic crises
     * MIDAS multiple imputation to fill in missing values in country-year dataset (neural network approach), optimizing hyperparameters for dataset
-* Multivariate Linear Regression with time-series controls to effect of pension schemes in country-year dataset
+* **Multivariate Linear Regression with time-series controls** to effect of pension schemes in country-year dataset
     * Multi-stage models 
-* Isolation of causal effect via extensive robustness checks, controlling for:
+* **Isolation of causal effect** via extensive robustness checks, controlling for:
     * Autocratic regime type
     * Middle Class Interests
     * Financialization
@@ -23,9 +23,7 @@
     * Investment Competition and Peer Learning
     * Protest Activity
 
-
-![alt text](main_finding.png)
-
+See the model flowchart
 
 ```mermaid
 flowchart TD
@@ -75,7 +73,8 @@ flowchart TD
     class E1,E2,E3,E4,E5,F,G,H highlight
 ```
 
-<img src="main_finding.png" alt="Main finding visualization" width="550">
+![alt text](main_finding.png)
+
 
 ### Paper Abstract
 Pension schemes provide autocratic regimes with an important strategic tool to curry the support of critical groups by enabling them to accumulate sizeable, deferred-access wealth. Yet, we argue, financialized pension schemes also impose political constraints on autocratic governments, incentivizing them to be more responsive to the interests of these supporters when severe banking crises put pension wealth at risk.
@@ -134,7 +133,7 @@ Seven binary indicators based on M&S data in following areas:
 7. **No Intervention**: Deliberate abstention from market interventions
 
 #### Bailout Policy Index Construction
-- Created using **principal component analysis (PCA)** to capture correlations in the raw data
+- Created using **principal component analysis (PCA)** to capture correlations in 7 binary indicators
 - Derived from the first principal component (linear combination explaining most variance)
 - Range: -1.96 to 3.96 (higher values = more coherent Bailout response)
 - Mean: -0.37, standard deviation: 1.32
@@ -160,8 +159,8 @@ Where:
 5. **Political Factors**: Democracy measures (Polity), partisanship
 
 #### Missing Data Strategy
-1. Reduced-form and comprehensive specifications using complete case sample
-2. Multiple imputation of missing values using MIDAS (2022) to preserve observations, see appendix
+1. Reduced-form and comprehensive specifications using complete case sample (M1-M2 Models)
+2. Multiple imputation of missing values using MIDAS (2022) to preserve observations, see appendix for hyperparameter optimization results and strategy (M3-M4 models)
 
 ### Causal Mechanism Testing
 - **Outcome Variables**: Mass mobilization and unrest following crisis interventions
@@ -232,27 +231,23 @@ These findings support our argument that autocratic regimes implement bailouts t
 
 ### Multiple imputation
 
-This paper utilizes the rMIDAS package from Lall and Robinson (2022) to fill in missing values for the country-year dataset. 
+MIDAS, a neural network-based multiple imputation method, was used to handle missing data in the time-series cross-sectional dataset spanning countries from 1800 to present. The data was first preprocessed by removing descriptive metadata and variables with low predictive power (outflux below 0.5), ultimately retaining 82 variables. To optimize the neural network architecture, a grid search was conducted testing 12 different configurations with 2-4 hidden layers and 64-512 nodes per layer, using an overimputation technique that artificially introduced 30% additional missingness to evaluate performance against known values.
 
-rMIDAS fits a autoencoder neural network with a encoder, decoder and a bottleneck layer to generatively fill in missing values based on non-linear pattern recognitions in the original data. See Lall and Robinson (2022) for an in-depth exploration of the network architecture, including usage of dropout layers to yield variation in imputed datasets for an accurate reflection of uncertainties in data generation. The neural network approach of rMIDAS is a state-of-the-art for preserving uncertainty estimates and realistic imputation of missing values at scale.    
+The optimal model configuration was determined to be a "wide and shallow" architecture with 512 nodes across 2 layers, trained for 20 epochs with early stopping to prevent overfitting. Performance was measured using RMSE for continuous variables, binary error for binary variables, and softmax error for categorical variables. To ensure robust results, the model was tested across eight different random seeds with consistent outcomes. 100 imputed datasets were generated and a two-step procedure was used to determine the optimal number of imputations (m) for each model, ensuring efficient standard errors with a target coefficient of variation of 5%.   
 
 <img src="hyperparameter_opt.png" alt="Hyperparameter optimization results" width="550">
 
 <img src="training_over_time.png" alt="MIDAS training progress over time" width="550">
 
+rMIDAS fits a autoencoder neural network with a encoder, decoder and a bottleneck layer to generatively fill in missing values based on non-linear pattern recognitions in the original data. See Lall and Robinson (2022) for an in-depth exploration of the network architecture, including usage of dropout layers to yield variation in imputed datasets for an accurate reflection of uncertainties in data generation. The neural network approach of rMIDAS is a state-of-the-art for preserving uncertainty estimates and realistic imputation of missing values at scale. 
+
 M3/M4 models utilize imputed datasets to estimate coefficients. This is done through the application of Rubin's rules, where m regression models are estimated for m completed datasets. Applications of Rubin's rules are in [step 2 of the multiple imputation scripts](MI_02_hyperparameter_optimization.R) and in [functions.R](functions.R).  
 
 Generate imputed datasets using the scripts before proceeding with the M3/M4 model estimations. 
 
-
-
 ### Replication of Findings
-
-Given the use of multiple imputation, the replication process is more involved than comparable papers. 
-
-The dataset was constructed on a country-year level to isolate the effect of policy interventions, with socioeconomic, political and demographic controls. See the codebook for an in-depth description of variables used and their sources. See appendix for an exploration of robustness check and complementary models.
 
 Data is accessed through the structure specified in setup.R. The primary data is SBC_policy_response_in_non_democracies_january_2025.dta. The data is pre-processed. 
 
-Utilize master.R for individual figure and table replications.
+Utilize master.R for individual figure and table replications. Follow the descriptions there. 
 
