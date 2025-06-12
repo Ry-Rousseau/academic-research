@@ -1,29 +1,25 @@
 ## Autocratic Bank Bailouts: Financialized Pensions, Mass Wealth Accumulation, and Regime Survival
 
-## Key Summary
+## 📊 Research Overview
 
-* **Question** When systemic banking crises strike, do autocracies that have *financialized* key supporters’ wealth via mandatory DC/PF pensions respond with more extensive bailouts, and does this insulate them from mass unrest?  
-* **Finding** Yes. Exposure to DC/PF pensions raises a country’s *Bailout Policy Index* (BPI) by ~ +1.2 standard deviations **and** this presists through extensive checks against possible confounder variables.  
-* **Mechanism** Bailouts protect pension-linked wealth, sustaining the “authoritarian bargain’’ and regime survival.
-
-### Data Science Pipeline
-
-* **Extensive feature engineering**
-    * PCA to generate novel measure of bank bailouts during economic crises
-    * MIDAS multiple imputation to fill in missing values in country-year dataset (neural network approach), optimizing hyperparameters for dataset
-* **Multivariate Linear Regression with time-series controls** to effect of pension schemes in country-year dataset
-    * Multi-stage models 
-* **Isolation of causal effect** via extensive robustness checks, controlling for:
-    * Autocratic regime type
-    * Middle Class Interests
-    * Financialization
-    * Regime Characteristics (Corruption, Clientelism)
-    * Captial Account Openness
-    * IMF Interventions
-    * Investment Competition and Peer Learning
-    * Protest Activity
-
-See the model flowchart
+<table>
+  <tr>
+    <th align="center" width="150">🔍 Question</th>
+    <td> Do autocratic governments with financialized pension schemes provide more extensive bailouts during banking crises compared to those without such schemes? </td>
+  </tr>
+  <tr>
+    <th align="center">💡 Finding</th>
+    <td>✅ <b>Yes</b> - Exposure to DC/PF pensions raises a country's <i>Bailout Policy Index</i> (BPI) by ~ <b>+1.2 standard deviations</b> and this persists through extensive checks against possible confounder variables.</td>
+  </tr>
+  <tr>
+    <th align="center">⚙️ Mechanism</th>
+    <td>Bailouts protect pension-linked wealth, sustaining the <b>"authoritarian bargain"</b> and regime survival, an insight into the political dynamics that are playing out across the world in authoritarian states (China, Russia, Indonesia and more).</td>
+  </tr>
+    <tr>
+    <th align="center">🔍 Significance</th>
+    <td>Helps us understand the political dynamics that enable authoritarian states to remain in power. Creates a model architecture for measuring this.</td>
+  </tr>
+</table>
 
 ```mermaid
 flowchart TD
@@ -72,8 +68,26 @@ flowchart TD
     class A1,A2,A3,A4,A5,B,C1,C2,C3,C4,C5,D1,D2,D3 secondary
     class E1,E2,E3,E4,E5,F,G,H highlight
 ```
+<div align="center">
+  <img src="main_finding.png" alt="Main finding visualization" width="550">
+</div>
 
-![alt text](main_finding.png)
+### Data Science Pipeline
+
+* **Extensive feature engineering**
+    * PCA to generate novel measure of bank bailouts during economic crises
+    * MIDAS multiple imputation to fill in missing values in country-year dataset (neural network approach), optimizing hyperparameters for dataset
+* **Multivariate Linear Regression with time-series controls** to effect of pension schemes in country-year dataset
+    * Multi-stage models 
+* **Isolation of causal effect** via extensive robustness checks, controlling for:
+    * Autocratic regime type
+    * Middle Class Interests
+    * Financialization
+    * Regime Characteristics (Corruption, Clientelism)
+    * Captial Account Openness
+    * IMF Interventions
+    * Investment Competition and Peer Learning
+    * Protest Activity
 
 
 ### Paper Abstract
@@ -172,8 +186,6 @@ Where:
 
 ## Findings
 
-### Primary Results: DC/PF Schemes Drive Extensive Bailouts
-
 <img src="scatterplot.png" alt="Relationship between DC/PF schemes and bailout policy" width="550">
 
 Our multivariate analysis confirms that autocratic regimes with mandatory DC schemes or PFs implement significantly more extensive bailouts during banking crises:
@@ -249,5 +261,5 @@ Generate imputed datasets using the scripts before proceeding with the M3/M4 mod
 
 Data is accessed through the structure specified in setup.R. The primary data is SBC_policy_response_in_non_democracies_january_2025.dta. The data is pre-processed. 
 
-Utilize master.R for individual figure and table replications. Follow the descriptions there. 
+Utilize master.R for individual figure and table replications. Follow the descriptions there.
 
