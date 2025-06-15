@@ -21,6 +21,8 @@
   </tr>
 </table>
 
+### Analysis Pipeline
+
 ```mermaid
 flowchart TD
     subgraph Data ["Data Collection & Integration"]
@@ -72,28 +74,36 @@ flowchart TD
   <img src="main_finding.png" alt="Main finding visualization" width="550">
 </div>
 
-### Data Science Pipeline
-
-* **Extensive feature engineering**
-    * PCA to generate novel measure of bank bailouts during economic crises
-    * MIDAS multiple imputation to fill in missing values in country-year dataset (neural network approach), optimizing hyperparameters for dataset
-* **Multivariate Linear Regression with time-series controls** to effect of pension schemes in country-year dataset
-    * Multi-stage models 
-* **Isolation of causal effect** via extensive robustness checks, controlling for:
-    * Autocratic regime type
-    * Middle Class Interests
-    * Financialization
-    * Regime Characteristics (Corruption, Clientelism)
-    * Captial Account Openness
-    * IMF Interventions
-    * Investment Competition and Peer Learning
-    * Protest Activity
-
-
 ### Paper Abstract
 Pension schemes provide autocratic regimes with an important strategic tool to curry the support of critical groups by enabling them to accumulate sizeable, deferred-access wealth. Yet, we argue, financialized pension schemes also impose political constraints on autocratic governments, incentivizing them to be more responsive to the interests of these supporters when severe banking crises put pension wealth at risk.
 
 Employing a unique dataset of crisis policy interventions since 1800 and a state-of-the-art approach to multiple imputation, we show that autocratic regimes with financialized pension schemes provide more extensive bailouts during crises. These bailouts enhance regime resilience by limiting losses for scheme participants and reducing social unrest, reflecting the imperatives of regime survival and the implicit political bargain between the regime and its critical supporters.
+
+### Methods Used
+* **Feature engineering**
+    * PCA to generate novel measure of bank bailouts during economic crises (Bailout policy index)
+    * Multiple imputation with rMIDAS neural network to fill in missing values in country-year dataset
+    * Rubin's rules to retain coefficient uncertainty following data imputation
+* **Multivariate Linear Regression with time-series controls** on country-year (panel) dataset
+    * 4 model variants to represent all combinations of 2 control variable sets with imputed vs non-imputed datasets
+    * Estimates the effect of direct contribution or provident fund (dc/pf) pension schemes on bailout strength
+    * Base model extended to produce robustness checks
+* **Fixed Effect Negative Binomial Regression** on social unrest (CNTS) dataset
+    * Estimates the effect of bailout index on social unrest, with country fixed effects, lagged time-series and  socioeconomic controls
+    * 3 model variants test for combinations of base controls, physical integrity repression and civil liberties repression
+* **Isolation of causal effect** by strategically testing controls in base model, accounting for:
+    * Autocratic regime type
+    * Degree of Democracy
+    * Middle Class Interests
+    * Financialization
+    * Regime Characteristics (Corruption, Clientelism)
+    * Capital Account Openness
+    * IMF Interventions
+    * Investment Competition and Peer Learning
+    * Protest Activity
+    * Exchange rate regime
+    * GDP per capita
+    * Economic growth
 
 ### Data
 
