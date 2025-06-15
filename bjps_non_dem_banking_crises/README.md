@@ -9,7 +9,7 @@
   </tr>
   <tr>
     <th align="center">💡 Finding</th>
-    <td>✅ <b>Yes</b> - Exposure to DC/PF pensions raises a country's <i>Bailout Policy Index</i> (BPI) by ~ <b>+1.2 standard deviations</b> and this persists through extensive checks against possible confounder variables.</td>
+    <td>✅ <b>Yes</b> - Exposure to DC/PF pensions raises a country's <i>Bailout Policy Index</i> (BPI) by ~ <b>+1 standard deviation</b> (1.23 points higher on bailout index) and this persists through extensive checks against possible confounder variables.</td>
   </tr>
   <tr>
     <th align="center">⚙️ Mechanism</th>
